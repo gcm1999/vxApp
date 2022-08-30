@@ -1,0 +1,32 @@
+<!--pages/test/test.wxml-->
+<text selectable>pages/test/test.wxml</text>
+<button type="primary" bindtap="testEvent">测试事件</button>
+<view>
+  数字:{{num}}
+  <button bindtap="upNum" size="mini" type="primary">
+    点击数字+1
+  </button>
+  <button bindtap="upNum2" data-num="{{2}}" data-upNum2="{{3}}" size="mini" type="primary">点击数字+2</button>
+</view>
+<input bindinput="inputHandler" placeholder="请输入" type="text" value="{{msg}}" />
+输入的值为:{{msg}}
+<view wx:for="{{arr}}" wx:key="id">{{item.name}}</view>
+<button type="primary" bindtap="changeFlag">切换显示</button>
+<view class="demo">
+  <view wx:if="{{flag}}"></view>
+  <view hidden="{{flag}}"></view>
+  <view></view>
+</view>
+<swiper indicator-dots="true" autoplay interval="5000" circular="true">
+  <swiper-item class="item">A</swiper-item>
+  <swiper-item class="item">B</swiper-item>
+  <swiper-item class="item">C</swiper-item>
+</swiper>
+<button>普通按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+<button size="mini">普通按钮</button>
+<button size="mini" type="primary">主色调按钮</button>
+<button size="mini" type="warn">警告按钮</button>
+<image></image>
+<image src="https://img0.baidu.com/it/u=3601405661,1812990591&fm=253&fmt=auto&app=138&f=JPEG?w=635&h=500"></image>

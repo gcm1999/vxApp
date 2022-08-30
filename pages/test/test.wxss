@@ -1,0 +1,45 @@
+/* pages/test/test.wxss */
+input{
+  border: 1px pink solid;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button{
+  margin: 3px;
+}
+.demo {
+  /* height: 100px; */
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.demo view:nth-child(1) {
+  background-color: lightpink;
+  width: 100px;
+  height: 100px;
+}
+.demo view:nth-child(2) {
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+}
+.demo view:nth-child(3) {
+  background-color: lightgoldenrodyellow;
+  width: 100px;
+  height: 100px;
+}
+
+.item{
+  height: 100px;
+  line-height: 150px;
+  background-color: pink;
+  text-align: center;
+}
+
+image{
+  border: lightgray solid 1px;
+}
